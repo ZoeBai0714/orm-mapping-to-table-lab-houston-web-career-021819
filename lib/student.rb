@@ -44,7 +44,7 @@ class Student
   end
   
   def self.create(name:,grade:)
-    student = Student.new(name, grade)
+    student = Student.new(name, grade) # @name = name  name is the value you pass in
     student.save
     student
   end
