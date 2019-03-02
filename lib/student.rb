@@ -7,7 +7,7 @@ class Student
   attr_reader :id
   @@all = []  
   
-  def initialize(name, grade)
+  def initialize(id = nil, name, grade)
     @name = name
     @grade = grade
     @@all << self
@@ -36,7 +36,7 @@ class Student
   def save
      DB[:conn].execute(
         "INSERT INTO students (name, grade) VALUES (?, ?)",
-        [@name, @grade]
+        [self.name, self.grade]
        )
   end
 end
