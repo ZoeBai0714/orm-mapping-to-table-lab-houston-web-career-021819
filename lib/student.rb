@@ -20,6 +20,7 @@ class Student
   def self.create_table
     DB[:conn].execute(
         "CREATE TABLE students(
+          id INTEGER PRIMARY KEY
           )"
       )
   end
