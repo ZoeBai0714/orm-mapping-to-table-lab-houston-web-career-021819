@@ -40,6 +40,6 @@ class Student
         [self.name, self.grade]
        )
      self.id = DB[:conn].last_insert_row_key  
-     self
+     
   end
 end
