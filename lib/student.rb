@@ -8,6 +8,7 @@ class Student
   @@all = []  
   
   def initialize(id = nil, name, grade)
+    @id = id
     @name = name
     @grade = grade
     @@all << self
