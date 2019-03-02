@@ -39,5 +39,6 @@ class Student
         "INSERT INTO students (name, grade) VALUES (?, ?)",
         [self.name, self.grade]
        )
+       
   end
 end
