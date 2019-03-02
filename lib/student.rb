@@ -44,6 +44,6 @@ class Student
   end
   
   def self.create
-    
+    student = student.new(@name, @grade)
   end
 end
