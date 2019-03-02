@@ -42,4 +42,7 @@ class Student
      @id = DB[:conn].last_insert_row_id 
      
   end
+  
+  def self.create
+  end
 end
